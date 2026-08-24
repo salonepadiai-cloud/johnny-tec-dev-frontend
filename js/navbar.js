@@ -1,37 +1,32 @@
-// ===========================
-// BOTTOM NAVIGATION
-// File: js/navbar.js
-// ===========================
+// ===================================
+// JOHNNY TEC. Dev
+// Bottom Navigation
+// ===================================
 
 const navbar = document.getElementById("navbar");
 
 navbar.innerHTML = `
 <div class="bottom-nav">
 
-    <a href="index.html" class="nav-item active">
-        <span class="icon">🏠</span>
-        <span class="label">Home</span>
-    </a>
+    <div class="nav-item active" data-page="home">
+        <div class="nav-icon">🏠</div>
+        <div class="nav-label">Home</div>
+    </div>
 
-    <a href="pages/about.html" class="nav-item">
-        <span class="icon">👤</span>
-        <span class="label">About</span>
-    </a>
+    <div class="nav-item" data-page="about">
+        <div class="nav-icon">👤</div>
+        <div class="nav-label">About</div>
+    </div>
 
-    <a href="pages/projects.html" class="nav-item">
-        <span class="icon">💻</span>
-        <span class="label">Projects</span>
-    </a>
+    <div class="nav-item" data-page="projects">
+        <div class="nav-icon">💻</div>
+        <div class="nav-label">Projects</div>
+    </div>
 
-    <a href="pages/contact.html" class="nav-item">
-        <span class="icon">📩</span>
-        <span class="label">Contact</span>
-    </a>
-
-    <a href="pages/settings.html" class="nav-item">
-        <span class="icon">⚙️</span>
-        <span class="label">Settings</span>
-    </a>
+    <div class="nav-item" data-page="contact">
+        <div class="nav-icon">📩</div>
+        <div class="nav-label">Contact</div>
+    </div>
 
 </div>
 `;
