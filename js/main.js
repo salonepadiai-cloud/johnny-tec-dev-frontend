@@ -3,30 +3,29 @@
 // Main App
 // ===================================
 
+// -------------------------------
+// PAGE NAVIGATION
+// -------------------------------
+
 const pages = document.querySelectorAll(".page");
 const navItems = document.querySelectorAll(".nav-item");
 
-// Show selected page
 function showPage(pageId) {
 
-    // Hide all pages
     pages.forEach(page => {
         page.classList.remove("active");
     });
 
-    // Remove active nav
     navItems.forEach(item => {
         item.classList.remove("active");
     });
 
-    // Show selected page
-    const selectedPage = document.getElementById(pageId);
+    const page = document.getElementById(pageId);
 
-    if (selectedPage) {
-        selectedPage.classList.add("active");
+    if (page) {
+        page.classList.add("active");
     }
 
-    // Activate selected nav
     const activeNav = document.querySelector(
         `.nav-item[data-page="${pageId}"]`
     );
@@ -35,7 +34,6 @@ function showPage(pageId) {
         activeNav.classList.add("active");
     }
 
-    // Scroll to top
     window.scrollTo({
         top: 0,
         behavior: "smooth"
@@ -43,18 +41,108 @@ function showPage(pageId) {
 
 }
 
-// Navigation Events
 navItems.forEach(item => {
 
     item.addEventListener("click", () => {
 
-        const page = item.dataset.page;
-
-        showPage(page);
+        showPage(item.dataset.page);
 
     });
 
 });
 
-// Default Page
 showPage("home");
+
+// -------------------------------
+// ADMIN SIDEBAR
+// -------------------------------
+
+const adminToggle = document.getElementById("adminToggle");
+const adminSidebar = document.getElementById("adminSidebar");
+const adminOverlay = document.getElementById("adminOverlay");
+
+// Open Sidebar
+if (adminToggle) {
+
+    adminToggle.addEventListener("click", () => {
+
+        adminSidebar.classList.add("active");
+        adminOverlay.classList.add("active");
+
+    });
+
+}
+
+// Close Sidebar
+if (adminOverlay) {
+
+    adminOverlay.addEventListener("click", () => {
+
+        adminSidebar.classList.remove("active");
+        adminOverlay.classList.remove("active");
+
+    });
+
+}
+
+// -------------------------------
+// ADMIN BUTTONS
+// -------------------------------
+
+const editProfileBtn = document.getElementById("editProfileBtn");
+const newPostBtn = document.getElementById("newPostBtn");
+const projectsBtn = document.getElementById("projectsBtn");
+const messagesBtn = document.getElementById("messagesBtn");
+const settingsBtn = document.getElementById("settingsBtn");
+
+if (editProfileBtn) {
+
+    editProfileBtn.addEventListener("click", () => {
+
+        alert("Edit Profile Panel (Coming Soon)");
+
+    });
+
+}
+
+if (newPostBtn) {
+
+    newPostBtn.addEventListener("click", () => {
+
+        alert("New Post Panel (Coming Soon)");
+
+    });
+
+}
+
+if (projectsBtn) {
+
+    projectsBtn.addEventListener("click", () => {
+
+        showPage("projects");
+
+        adminSidebar.classList.remove("active");
+        adminOverlay.classList.remove("active");
+
+    });
+
+}
+
+if (messagesBtn) {
+
+    messagesBtn.addEventListener("click", () => {
+
+        alert("Messages Panel (Coming Soon)");
+
+    });
+
+}
+
+if (settingsBtn) {
+
+    settingsBtn.addEventListener("click", () => {
+
+        alert("Settings Panel (Coming Soon)");
+
+    });
+}
