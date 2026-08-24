@@ -1,0 +1,107 @@
+/* ===========================
+   JOHNNY TEC. Dev
+   Global Styles
+=========================== */
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Theme */
+
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #0f172a;
+    --background-color: #ffffff;
+    --text-color: #1e293b;
+    --light-color: #f8fafc;
+    --border-color: #e2e8f0;
+
+    --font-family: Arial, Helvetica, sans-serif;
+
+    --max-width: 1200px;
+
+    --transition: 0.3s ease;
+}
+
+/* Base */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    background: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Layout */
+
+main {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    padding: 80px 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--secondary-color);
+}
+
+p {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Buttons */
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: var(--transition);
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Utilities */
+
+.hidden {
+    display: none;
+}
