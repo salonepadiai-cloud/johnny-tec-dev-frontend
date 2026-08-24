@@ -1,44 +1,68 @@
-/* ===================================
+/* ==========================================
    ABOUT PAGE
-=================================== */
+========================================== */
 
 #about{
+
     min-height:100vh;
+
     padding:40px 0 120px;
+
+    background:#f6f8fc;
+
 }
 
-.about-wrapper{
-    width:92%;
-    max-width:1200px;
-    margin:auto;
-}
+.about-page{
 
-/* Header */
+    width:100%;
+
+}
 
 .about-header{
+
     text-align:center;
-    margin-bottom:50px;
+
+    margin-bottom:40px;
+
 }
 
 .about-header h1{
+
     font-size:3rem;
+
+    color:#0f172a;
+
     margin-bottom:10px;
+
 }
 
 .about-header p{
-    max-width:700px;
-    margin:auto;
+
+    color:#64748b;
+
+    font-size:1rem;
+
 }
 
-/* Layout */
+/* =====================
+   GRID
+===================== */
 
 .about-grid{
+
     display:grid;
-    grid-template-columns:350px 1fr;
-    gap:40px;
+
+    grid-template-columns:340px 1fr;
+
+    gap:30px;
+
+    align-items:start;
+
 }
 
-/* Profile Card */
+/* =====================
+   PROFILE CARD
+===================== */
 
 .profile-card{
 
@@ -50,27 +74,25 @@
 
     text-align:center;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-
-    position:sticky;
-
-    top:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
 
 }
 
 .profile-card img{
 
-    width:170px;
+    width:180px;
 
-    height:170px;
-
-    object-fit:cover;
+    height:180px;
 
     border-radius:50%;
 
+    object-fit:cover;
+
     margin:auto;
 
-    border:6px solid #dbeafe;
+    border:8px solid #eaf2ff;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
 
 }
 
@@ -78,21 +100,49 @@
 
     margin-top:20px;
 
-    font-size:1.8rem;
+    font-size:2rem;
 
 }
 
-.profile-card span{
+.profile-card h4{
 
     color:#2563eb;
 
-    font-weight:600;
+    margin:10px 0 20px;
 
 }
 
 .profile-card p{
 
-    margin:20px 0;
+    color:#64748b;
+
+    line-height:1.8;
+
+}
+
+.profile-info{
+
+    margin:30px 0;
+
+}
+
+.info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:15px 0;
+
+    border-bottom:1px solid #edf2f7;
+
+}
+
+.info span{
+
+    font-size:1.3rem;
 
 }
 
@@ -106,37 +156,97 @@
 
 }
 
-/* Cards */
+/* =====================
+   QUICK FACTS
+===================== */
 
-.about-card{
+.quick-facts{
+
+    margin-top:25px;
 
     background:#fff;
 
-    border-radius:22px;
+    border-radius:25px;
 
-    padding:30px;
+    padding:25px;
 
-    margin-bottom:30px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.07);
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
 
 }
 
-.about-card h3{
+.quick-facts h3{
 
-    margin-bottom:20px;
+    margin-bottom:25px;
+
+}
+
+.fact{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:18px;
+
+    margin-bottom:15px;
+
+    border-radius:18px;
+
+    background:#f8fafc;
+
+    transition:.3s;
+
+}
+
+.fact:hover{
+
+    transform:translateX(6px);
+
+    background:#edf4ff;
+
+}
+
+.fact span{
 
     font-size:1.5rem;
 
 }
 
-/* Timeline */
+/* =====================
+   SECTION CARD
+===================== */
+
+.section-card{
+
+    background:#fff;
+
+    border-radius:25px;
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.section-card h2{
+
+    margin-bottom:25px;
+
+}
+
+/* =====================
+   TIMELINE
+===================== */
 
 .timeline{
 
     position:relative;
 
-    padding-left:35px;
+    padding-left:40px;
 
 }
 
@@ -146,13 +256,13 @@
 
     position:absolute;
 
-    left:8px;
+    left:11px;
 
     top:0;
 
-    width:3px;
+    bottom:0;
 
-    height:100%;
+    width:3px;
 
     background:#2563eb;
 
@@ -162,7 +272,7 @@
 
     position:relative;
 
-    margin-bottom:35px;
+    margin-bottom:40px;
 
 }
 
@@ -178,39 +288,49 @@
 
     position:absolute;
 
-    left:-33px;
+    left:-37px;
 
-    top:5px;
+    top:4px;
 
-    width:18px;
+    width:20px;
 
-    height:18px;
+    height:20px;
 
     border-radius:50%;
 
-    background:#2563eb;
+    background:#fff;
+
+    border:4px solid #2563eb;
 
 }
 
-.timeline-item h4{
-
-    margin-bottom:8px;
-
-}
-
-.timeline-item span{
+.year{
 
     color:#2563eb;
 
-    font-size:.9rem;
-
-    font-weight:600;
+    font-weight:700;
 
 }
 
-/* Skills */
+.timeline-item h3{
 
-.skills-badges{
+    margin:10px 0;
+
+}
+
+.timeline-item p{
+
+    color:#64748b;
+
+    line-height:1.7;
+
+}
+
+/* =====================
+   SKILLS
+===================== */
+
+.skills{
 
     display:flex;
 
@@ -220,15 +340,15 @@
 
 }
 
-.skills-badges span{
+.skills span{
 
-    background:#dbeafe;
+    background:#f8fafc;
 
-    color:#2563eb;
-
-    padding:12px 18px;
+    padding:12px 22px;
 
     border-radius:50px;
+
+    border:1px solid #dbeafe;
 
     font-weight:600;
 
@@ -236,63 +356,125 @@
 
 }
 
-.skills-badges span:hover{
+.skills span:hover{
 
     background:#2563eb;
 
     color:#fff;
 
-    transform:translateY(-4px);
+    transform:translateY(-5px);
 
 }
 
-/* Experience */
+/* =====================
+   EXPERIENCE
+===================== */
 
-.experience-grid{
+.experience{
 
     display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 
     gap:20px;
 
 }
 
-.exp-card{
+.experience-card{
 
     background:#f8fafc;
+
+    border:1px solid #e2e8f0;
 
     border-radius:18px;
 
     padding:25px;
 
-    border:1px solid #e2e8f0;
-
     transition:.3s;
 
 }
 
-.exp-card:hover{
+.experience-card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-6px);
 
     border-color:#2563eb;
 
+    box-shadow:0 10px 30px rgba(37,99,235,.15);
+
 }
 
-.exp-card h4{
+.experience-card h3{
 
     margin-bottom:12px;
 
 }
 
-.exp-card p{
+.experience-card p{
 
-    font-size:.95rem;
+    color:#64748b;
+
+    line-height:1.7;
 
 }
 
-/* Responsive */
+/* =====================
+   BUTTONS
+===================== */
+
+.btn{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:15px;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn-primary{
+
+    background:#2563eb;
+
+    color:#fff;
+
+}
+
+.btn-primary:hover{
+
+    background:#1d4ed8;
+
+}
+
+.btn-outline{
+
+    background:#fff;
+
+    border:2px solid #2563eb;
+
+    color:#2563eb;
+
+}
+
+.btn-outline:hover{
+
+    background:#2563eb;
+
+    color:#fff;
+
+}
+
+/* =====================
+   MOBILE
+===================== */
 
 @media(max-width:900px){
 
@@ -302,15 +484,9 @@ grid-template-columns:1fr;
 
 }
 
-.profile-card{
-
-position:static;
-
 }
 
-}
-
-@media(max-width:600px){
+@media(max-width:768px){
 
 .about-header h1{
 
@@ -318,15 +494,41 @@ font-size:2.3rem;
 
 }
 
-.skills-badges{
+.profile-card{
+
+padding:25px;
+
+}
+
+.profile-card img{
+
+width:150px;
+
+height:150px;
+
+}
+
+.skills{
 
 justify-content:center;
 
 }
 
-.profile-buttons{
+.section-card{
 
-width:100%;
+padding:20px;
+
+}
+
+.timeline{
+
+padding-left:30px;
+
+}
+
+.timeline-item::before{
+
+left:-28px;
 
 }
 
