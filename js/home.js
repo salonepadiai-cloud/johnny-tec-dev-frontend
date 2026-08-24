@@ -1,65 +1,53 @@
-const hero = document.getElementById("hero");
+// ==========================
+// HOME PAGE
+// ==========================
 
-hero.innerHTML = `
-<section class="hero-container">
+const home = document.getElementById("home");
 
-    <div class="hero-content">
+home.innerHTML = `
+<div class="container">
 
-        <p class="hero-tag">WELCOME TO MY PORTFOLIO</p>
+    <div class="hero">
 
-        <h1>
-            JOHNNY <span>TEC.</span> Dev
-        </h1>
+        <div class="hero-content">
 
-        <h2>
-            Full Stack Developer & Software Engineer
-        </h2>
+            <span class="hero-tag">
+                JOHNNY TEC. Dev
+            </span>
 
-        <p class="hero-description">
-            I build fast, modern and scalable web applications with clean code,
-            powerful APIs and beautiful user experiences.
-        </p>
+            <h1>
+                Building Beautiful &
+                Powerful Web Applications
+            </h1>
 
-        <div class="hero-buttons">
-            <a href="#projects" class="btn-primary">
-                View My Work
-            </a>
+            <p>
+                Full Stack Developer focused on modern,
+                fast and scalable software.
+            </p>
 
-            <a href="#contact" class="btn-secondary">
-                Hire Me
-            </a>
-        </div>
+            <div class="hero-buttons">
 
-        <div class="hero-stats">
+                <a href="#" class="btn btn-primary">
+                    My Projects
+                </a>
 
-            <div class="stat">
-                <h3>20+</h3>
-                <span>Projects</span>
-            </div>
+                <a href="#" class="btn btn-outline">
+                    Contact Me
+                </a>
 
-            <div class="stat">
-                <h3>5+</h3>
-                <span>Technologies</span>
-            </div>
-
-            <div class="stat">
-                <h3>100%</h3>
-                <span>Dedication</span>
             </div>
 
         </div>
 
-    </div>
+        <div class="hero-image">
 
-    <div class="hero-image">
-
-        <div class="profile-card">
-
-            <img src="assets/images/profile.png" alt="JOHNNY TEC Dev">
+            <img
+            src="assets/images/profile.png"
+            alt="Profile">
 
         </div>
 
     </div>
 
-</section>
+</div>
 `;
