@@ -1,71 +1,79 @@
-/* ===========================
-   FIXED BOTTOM NAVIGATION
-=========================== */
+/* ===================================
+   JOHNNY TEC. Dev
+   Bottom Navigation
+=================================== */
 
-#header{
+#navbar{
+
     position:fixed;
-    left:0;
-    right:0;
-    bottom:0;
-    z-index:9999;
-    display:flex;
-    justify-content:center;
-    padding:15px;
-    background:transparent;
+
+    left:50%;
+
+    bottom:20px;
+
+    transform:translateX(-50%);
+
+    width:95%;
+
+    max-width:480px;
+
+    z-index:999;
+
 }
 
 .bottom-nav{
 
-    width:100%;
-    max-width:500px;
-
     display:flex;
-    justify-content:space-around;
+
+    justify-content:space-between;
+
     align-items:center;
 
-    padding:12px;
+    padding:12px 15px;
 
-    border-radius:22px;
-
-    background:rgba(15,23,42,.92);
+    background:rgba(255,255,255,.95);
 
     backdrop-filter:blur(20px);
 
-    box-shadow:
-        0 10px 35px rgba(0,0,0,.35);
+    border:1px solid rgba(226,232,240,.8);
+
+    border-radius:24px;
+
+    box-shadow:0 15px 40px rgba(15,23,42,.15);
+
 }
 
 .nav-item{
 
-    text-decoration:none;
-
-    color:#94a3b8;
+    flex:1;
 
     display:flex;
+
     flex-direction:column;
 
     align-items:center;
 
-    gap:6px;
+    justify-content:center;
+
+    gap:5px;
+
+    padding:10px;
+
+    border-radius:18px;
+
+    cursor:pointer;
 
     transition:.3s;
 
-    font-size:.8rem;
-
-    padding:8px 12px;
-
-    border-radius:14px;
-}
-
-.nav-item .icon{
-
-    font-size:1.4rem;
+    color:#64748b;
 
 }
 
 .nav-item:hover{
 
-    color:#ffffff;
+    background:#f1f5f9;
+
+    color:#2563eb;
 
 }
 
@@ -77,30 +85,44 @@
 
 }
 
-.nav-item.active .icon{
+.nav-icon{
 
-    transform:scale(1.1);
+    font-size:22px;
 
-}
-
-body{
-
-    padding-bottom:110px;
+    line-height:1;
 
 }
 
-@media(min-width:768px){
+.nav-label{
 
-.bottom-nav{
+    font-size:12px;
 
-max-width:650px;
-
-}
-
-.nav-item{
-
-font-size:.9rem;
+    font-weight:600;
 
 }
+
+@media(max-width:500px){
+
+    #navbar{
+
+        width:calc(100% - 20px);
+
+        bottom:10px;
+
+    }
+
+    .bottom-nav{
+
+        border-radius:20px;
+
+        padding:10px;
+
+    }
+
+    .nav-label{
+
+        font-size:11px;
+
+    }
 
 }
