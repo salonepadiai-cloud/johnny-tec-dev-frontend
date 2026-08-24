@@ -1,0 +1,13 @@
+const profile = {
+
+    name: "JOHNNY TEC. Dev",
+
+    title: "Aspiring Full Stack Developer",
+
+    image: "assets/images/johnny.jpg",
+
+    location: "Sierra Leone",
+
+    email: "your@email.com"
+
+};
