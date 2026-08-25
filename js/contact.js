@@ -1,64 +1,106 @@
-// ==========================
+// ==========================================
 // CONTACT PAGE
-// ==========================
+// File: js/contact.js
+// ==========================================
 
 const contact = document.getElementById("contact");
 
 contact.innerHTML = `
-<div class="container">
 
-    <h1>Contact Me</h1>
+<section class="contact-page">
 
-    <form id="contactForm">
+    <div class="container">
 
-        <input
-        type="text"
-        id="name"
-        placeholder="Full Name"
-        required>
+        <div class="contact-header">
 
-        <input
-        type="email"
-        id="email"
-        placeholder="Email Address"
-        required>
+            <h1>Contact Me</h1>
 
-        <textarea
-        id="message"
-        placeholder="Your Message"
-        required></textarea>
+            <p>
+                Feel free to connect with me through any of the platforms below.
+            </p>
 
-        <button
-        class="btn btn-primary"
-        type="submit">
+        </div>
 
-            Send Message
+        <div class="contact-grid">
 
-        </button>
+            <!-- WhatsApp -->
 
-    </form>
+            <a
+                href="https://wa.me/23234653361"
+                target="_blank"
+                class="contact-card">
 
-</div>
+                <div class="icon">💬</div>
+
+                <h3>WhatsApp</h3>
+
+                <p>033106301</p>
+
+            </a>
+
+            <!-- TikTok -->
+
+            <a
+                href="https://www.tiktok.com/@nasheedvibez?_r=1&_t=ZS-94UPI2DDkHI"
+                target="_blank"
+                class="contact-card">
+
+                <div class="icon">🎵</div>
+
+                <h3>TikTok</h3>
+
+                <p>@nasheedvibez</p>
+
+            </a>
+
+            <!-- Facebook / Website -->
+
+            <a
+                href="https://salonepadiai-cloud.github.io/salonepadi-ai-frontend/"
+                target="_blank"
+                class="contact-card">
+
+                <div class="icon">🌐</div>
+
+                <h3>Website</h3>
+
+                <p>Visit My Portfolio</p>
+
+            </a>
+
+            <!-- Email -->
+
+            <a
+                href="mailto:fatormajohn64@gmail.com"
+                class="contact-card">
+
+                <div class="icon">📧</div>
+
+                <h3>Email</h3>
+
+                <p>fatormajohn64@gmail.com</p>
+
+            </a>
+
+            <!-- WhatsApp QR -->
+
+            <a
+                href="https://wa.me/qr/RYKEVHEYTNU4M1"
+                target="_blank"
+                class="contact-card">
+
+                <div class="icon">📱</div>
+
+                <h3>WhatsApp QR</h3>
+
+                <p>Open QR Chat</p>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
 `;
-
-const form = document.getElementById("contactForm");
-
-form.addEventListener("submit", async (e)=>{
-
-    e.preventDefault();
-
-    const data={
-
-        name:document.getElementById("name").value,
-
-        email:document.getElementById("email").value,
-
-        message:document.getElementById("message").value
-
-    };
-
-    console.log(data);
-
-    // Backend API will be connected later
-
-});
