@@ -7,27 +7,27 @@ const about = document.getElementById("about");
 
 about.innerHTML = `
 
-<div class="about-page">
+<section class="about-page">
 
     <div class="container">
 
-        <!-- Heading -->
+        <!-- Header -->
 
         <div class="about-header">
 
             <h1>About Me</h1>
 
             <p>
-                Get to know me better, my journey and what I'm learning.
+                Get to know me, my journey and what I'm currently learning.
             </p>
 
         </div>
 
         <div class="about-grid">
 
-            <!-- =========================
-                 LEFT SIDE
-            ========================== -->
+            <!-- ===========================
+                 LEFT COLUMN
+            ============================ -->
 
             <div class="left-column">
 
@@ -36,8 +36,9 @@ about.innerHTML = `
                 <div class="profile-card">
 
                     <img
-                        src="assets/images/profile.png"
-                        alt="JOHNNY TEC. Dev">
+                        src="assets/images/profile.jpg"
+                        alt="JOHNNY TEC. Dev"
+                        class="profile-image">
 
                     <h2>JOHNNY TEC. Dev</h2>
 
@@ -45,11 +46,13 @@ about.innerHTML = `
 
                     <p>
 
-                        I'm a passionate developer from Sierra Leone.
+                        Hi, I'm Johnny from Sierra Leone.
 
-                        I'm currently learning web development every day,
-                        building projects and improving my programming
-                        skills one step at a time.
+                        I'm currently learning modern web development by
+                        building real projects with HTML, CSS and JavaScript.
+
+                        My goal is to become a professional Full Stack
+                        Developer by learning something new every day.
 
                     </p>
 
@@ -73,9 +76,17 @@ about.innerHTML = `
 
                         <div class="info">
 
+                            <span>📚</span>
+
+                            <p>Building Personal Projects</p>
+
+                        </div>
+
+                        <div class="info">
+
                             <span>🚀</span>
 
-                            <p>Open To Collaboration</p>
+                            <p>Future Full Stack Developer</p>
 
                         </div>
 
@@ -83,13 +94,17 @@ about.innerHTML = `
 
                     <div class="profile-buttons">
 
-                        <button class="btn btn-primary">
+                        <button
+                            class="btn btn-primary"
+                            onclick="showPage('projects')">
 
-                            My Projects
+                            View My Projects
 
                         </button>
 
-                        <button class="btn btn-outline">
+                        <button
+                            class="btn btn-outline"
+                            onclick="showPage('contact')">
 
                             Contact Me
 
@@ -101,19 +116,15 @@ about.innerHTML = `
 
                 <!-- Quick Facts -->
 
-                <div class="quick-facts card">
+                <div class="quick-facts">
 
-                    <h3>
-
-                        Quick Facts
-
-                    </h3>
+                    <h3>Quick Facts</h3>
 
                     <div class="fact">
 
-                        <span>📚</span>
+                        <span>🔥</span>
 
-                        <p>Currently Learning Web Development</p>
+                        <p>Passionate About Programming</p>
 
                     </div>
 
@@ -121,15 +132,15 @@ about.innerHTML = `
 
                         <span>💻</span>
 
-                        <p>Building Personal Projects</p>
+                        <p>Building Real Projects</p>
 
                     </div>
 
                     <div class="fact">
 
-                        <span>🔥</span>
+                        <span>📚</span>
 
-                        <p>Learning JavaScript & Node.js</p>
+                        <p>Learning Every Day</p>
 
                     </div>
 
@@ -137,7 +148,7 @@ about.innerHTML = `
 
                         <span>🎯</span>
 
-                        <p>Goal: Become a Full Stack Developer</p>
+                        <p>Working Towards Becoming Full Stack</p>
 
                     </div>
 
@@ -145,21 +156,17 @@ about.innerHTML = `
 
             </div>
 
-            <!-- =========================
-                 RIGHT SIDE
-            ========================== -->
+            <!-- ===========================
+                 RIGHT COLUMN
+            ============================ -->
 
             <div class="right-column">
 
                 <!-- Journey -->
 
-                <div class="card section-card">
+                <div class="section-card">
 
-                    <h2>
-
-                        My Journey
-
-                    </h2>
+                    <h2>My Journey</h2>
 
                     <div class="timeline">
 
@@ -167,21 +174,20 @@ about.innerHTML = `
 
                             <span class="year">
 
-                                2025 - Present
+                                2025
 
                             </span>
 
                             <h3>
 
-                                Learning Web Development
+                                Started Programming
 
                             </h3>
 
                             <p>
 
-                                Started learning HTML, CSS and
-                                JavaScript while building personal
-                                projects.
+                                Began learning HTML, CSS and JavaScript while
+                                creating simple projects.
 
                             </p>
 
@@ -191,21 +197,20 @@ about.innerHTML = `
 
                             <span class="year">
 
-                                Current
+                                Present
 
                             </span>
 
                             <h3>
 
-                                Backend Development
+                                Learning Full Stack Development
 
                             </h3>
 
                             <p>
 
-                                Learning Node.js, Express and
-                                Supabase while creating full-stack
-                                applications.
+                                Learning Node.js, Express and databases while
+                                building my portfolio and practice projects.
 
                             </p>
 
@@ -215,21 +220,20 @@ about.innerHTML = `
 
                             <span class="year">
 
-                                Future Goal
+                                Future
 
                             </span>
 
                             <h3>
 
-                                Professional Software Engineer
+                                Professional Developer
 
                             </h3>
 
                             <p>
 
-                                Continue learning every day,
-                                contribute to open-source,
-                                and build real products.
+                                Continue improving my skills and build useful
+                                applications for people around the world.
 
                             </p>
 
@@ -241,13 +245,9 @@ about.innerHTML = `
 
                 <!-- Skills -->
 
-                <div class="card section-card">
+                <div class="section-card">
 
-                    <h2>
-
-                        Technologies I'm Learning
-
-                    </h2>
+                    <h2>Technologies I'm Learning</h2>
 
                     <div class="skills">
 
@@ -261,44 +261,32 @@ about.innerHTML = `
 
                         <span>GitHub</span>
 
+                        <span>Responsive Design</span>
+
                         <span>Node.js</span>
 
                         <span>Express.js</span>
-
-                        <span>REST API</span>
-
-                        <span>Supabase</span>
-
-                        <span>Responsive Design</span>
 
                     </div>
 
                 </div>
 
-                <!-- Learning Projects -->
+                <!-- Current Work -->
 
-                <div class="card section-card">
+                <div class="section-card">
 
-                    <h2>
-
-                        What I'm Working On
-
-                    </h2>
+                    <h2>What I'm Working On</h2>
 
                     <div class="experience">
 
                         <div class="experience-card">
 
-                            <h3>
-
-                                Personal Portfolio
-
-                            </h3>
+                            <h3>Portfolio Website</h3>
 
                             <p>
 
-                                Building my own portfolio website
-                                using HTML, CSS and JavaScript.
+                                Building my personal portfolio to showcase my
+                                learning journey and future projects.
 
                             </p>
 
@@ -306,16 +294,12 @@ about.innerHTML = `
 
                         <div class="experience-card">
 
-                            <h3>
-
-                                Learning Projects
-
-                            </h3>
+                            <h3>Learning Projects</h3>
 
                             <p>
 
-                                Creating small projects to improve
-                                problem-solving and coding skills.
+                                Creating small projects to improve my coding
+                                and problem-solving skills.
 
                             </p>
 
@@ -323,17 +307,12 @@ about.innerHTML = `
 
                         <div class="experience-card">
 
-                            <h3>
-
-                                Full Stack Journey
-
-                            </h3>
+                            <h3>Future Goals</h3>
 
                             <p>
 
-                                Learning backend development and
-                                databases while building complete
-                                web applications.
+                                Learn backend development, databases and build
+                                complete full stack applications.
 
                             </p>
 
@@ -349,6 +328,6 @@ about.innerHTML = `
 
     </div>
 
-</div>
+</section>
 
 `;
