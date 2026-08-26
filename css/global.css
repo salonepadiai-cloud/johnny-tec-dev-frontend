@@ -1,248 +1,177 @@
-/* ===================================
-   JOHNNY TEC. Dev
-   Global Styles
-=================================== */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-:root{
-
-    --primary:#3b82f6;
-    --primary-dark:#2563eb;
-
-    --background:#f5f7fb;
-
-    --surface:#ffffff;
-
-    --text:#0f172a;
-
-    --text-light:#64748b;
-
-    --border:#e2e8f0;
-
-    --radius:18px;
-
-    --shadow:0 15px 40px rgba(15,23,42,.08);
-
-    --transition:.3s ease;
-
-}
-
-html{
-
-    scroll-behavior:smooth;
-
-}
+/* ==========================================
+   GLOBAL BACKGROUND
+========================================== */
 
 body{
 
-    font-family:'Poppins',sans-serif;
+    background:
+    linear-gradient(135deg,
+    #081120 0%,
+    #102a43 35%,
+    #184e77 70%,
+    #3a86ff 100%);
 
-    background:var(--background);
-
-    color:var(--text);
-
-    overflow-x:hidden;
-
-}
-
-/* APP */
-
-#app{
-
-    width:100%;
-    min-height:100vh;
-    padding-bottom:110px;
+    color:#ffffff;
 
 }
 
-/* PAGES */
+/* ==========================================
+   HOME
+========================================== */
 
-.page{
+#home{
 
-    display:none;
-
-    width:100%;
-
-    min-height:100vh;
-
-    animation:fade .35s ease;
+    background:transparent;
 
 }
 
-.page.active{
+/* ==========================================
+   HERO CARD
+========================================== */
 
-    display:block;
+.hero{
 
-}
+    background:rgba(255,255,255,.08);
 
-@keyframes fade{
+    backdrop-filter:blur(20px);
 
-    from{
+    border:1px solid rgba(255,255,255,.15);
 
-        opacity:0;
-        transform:translateY(20px);
-
-    }
-
-    to{
-
-        opacity:1;
-        transform:translateY(0);
-
-    }
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.35);
 
 }
 
-/* CONTAINER */
+/* ==========================================
+   STATS
+========================================== */
 
-.container{
+.stat-card{
 
-    width:92%;
+    background:rgba(255,255,255,.08);
 
-    max-width:1200px;
+    backdrop-filter:blur(18px);
 
-    margin:auto;
-
-}
-
-/* TEXT */
-
-h1,
-h2,
-h3,
-h4{
-
-    color:var(--text);
-
-}
-
-p{
-
-    color:var(--text-light);
-
-}
-
-a{
-
-    text-decoration:none;
-
-    color:inherit;
-
-}
-
-img{
-
-    display:block;
-
-    max-width:100%;
-
-}
-
-ul{
-
-    list-style:none;
-
-}
-
-/* BUTTONS */
-
-.btn{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    padding:14px 28px;
-
-    border-radius:12px;
-
-    font-weight:600;
-
-    transition:var(--transition);
-
-}
-
-.btn-primary{
-
-    background:var(--primary);
+    border:1px solid rgba(255,255,255,.12);
 
     color:#fff;
 
 }
 
-.btn-primary:hover{
+.stat-card h2{
 
-    background:var(--primary-dark);
-
-}
-
-.btn-outline{
-
-    border:2px solid var(--primary);
-
-    color:var(--primary);
+    color:#4cc9f0;
 
 }
 
-.btn-outline:hover{
+.stat-card p{
 
-    background:var(--primary);
+    color:#d6e6ff;
+
+}
+
+/* ==========================================
+   POST CARD
+========================================== */
+
+.post-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+}
+
+.post-card h3{
+
+    color:#4cc9f0;
+
+}
+
+.post-card p{
+
+    color:#d6e6ff;
+
+}
+
+/* ==========================================
+   LEARNING CARD
+========================================== */
+
+.learning-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+}
+
+.learning-card h3{
+
+    color:#4cc9f0;
+
+}
+
+.learning-card p{
+
+    color:#d6e6ff;
+
+}
+
+/* ==========================================
+   GOAL CARD
+========================================== */
+
+.goal-card{
+
+    background:
+    linear-gradient(135deg,
+    #2563eb,
+    #3b82f6,
+    #06b6d4);
+
+    color:#fff;
+
+    box-shadow:
+    0 20px 50px rgba(37,99,235,.45);
+
+}
+
+.goal-card h2{
 
     color:#fff;
 
 }
 
-/* CARD */
+.goal-card p{
 
-.card{
-
-    background:var(--surface);
-
-    border-radius:var(--radius);
-
-    box-shadow:var(--shadow);
+    color:#eef7ff;
 
 }
 
-/* SCROLLBAR */
+/* ==========================================
+   HEADINGS
+========================================== */
 
-::-webkit-scrollbar{
+.hero h1,
+.section h2{
 
-    width:7px;
-
-}
-
-::-webkit-scrollbar-thumb{
-
-    background:var(--primary);
-
-    border-radius:50px;
+    color:#ffffff;
 
 }
 
-::-webkit-scrollbar-track{
+.hero h3{
 
-    background:#edf2f7;
+    color:#4cc9f0;
 
 }
 
-/* MOBILE */
+.hero p{
 
-@media(max-width:768px){
-
-    .container{
-
-        width:94%;
-
-    }
+    color:#d6e6ff;
 
 }
