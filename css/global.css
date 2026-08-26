@@ -1,177 +1,335 @@
 /* ==========================================
-   GLOBAL BACKGROUND
+   JOHNNY TEC. Dev
+   GLOBAL STYLES
 ========================================== */
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================
+   ROOT
+========================== */
+
+:root{
+
+    --primary:#2563eb;
+    --primary-dark:#1d4ed8;
+
+    --secondary:#0f172a;
+
+    --background:#eef5ff;
+
+    --surface:#ffffff;
+
+    --text:#1e293b;
+
+    --text-light:#64748b;
+
+    --border:#dbe4f3;
+
+    --shadow:0 15px 40px rgba(15,23,42,.08);
+
+    --radius:24px;
+
+    --transition:.3s ease;
+
+    --max-width:1200px;
+
+    --font:Arial,Helvetica,sans-serif;
+
+}
+
+/* ==========================
+   HTML
+========================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/* ==========================
+   BODY
+========================== */
 
 body{
 
-    background:
-    linear-gradient(135deg,
-    #081120 0%,
-    #102a43 35%,
-    #184e77 70%,
-    #3a86ff 100%);
+    font-family:var(--font);
 
-    color:#ffffff;
+    background:linear-gradient(
+        180deg,
+        #f8fbff 0%,
+        #eef5ff 100%
+    );
 
-}
+    color:var(--text);
 
-/* ==========================================
-   HOME
-========================================== */
+    line-height:1.6;
 
-#home{
-
-    background:transparent;
+    overflow-x:hidden;
 
 }
 
-/* ==========================================
-   HERO CARD
-========================================== */
+/* ==========================
+   APP
+========================== */
 
-.hero{
+#app{
 
-    background:rgba(255,255,255,.08);
+    width:100%;
 
-    backdrop-filter:blur(20px);
+    min-height:100vh;
 
-    border:1px solid rgba(255,255,255,.15);
-
-    box-shadow:
-    0 20px 60px rgba(0,0,0,.35);
+    padding-bottom:110px;
 
 }
 
-/* ==========================================
-   STATS
-========================================== */
+/* ==========================
+   PAGES
+========================== */
 
-.stat-card{
+.page{
 
-    background:rgba(255,255,255,.08);
+    display:none;
 
-    backdrop-filter:blur(18px);
+    width:100%;
 
-    border:1px solid rgba(255,255,255,.12);
+    animation:fade .35s ease;
+
+}
+
+.page.active{
+
+    display:block;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================
+   SECTION
+========================== */
+
+section{
+
+    width:100%;
+
+    padding:30px 20px;
+
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+
+    width:100%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.card{
+
+    background:var(--surface);
+
+    border-radius:var(--radius);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.btn{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 24px;
+
+    border:none;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    text-decoration:none;
+
+}
+
+.btn-primary{
+
+    background:var(--primary);
 
     color:#fff;
 
 }
 
-.stat-card h2{
+.btn-primary:hover{
 
-    color:#4cc9f0;
-
-}
-
-.stat-card p{
-
-    color:#d6e6ff;
+    background:var(--primary-dark);
 
 }
 
-/* ==========================================
-   POST CARD
-========================================== */
+.btn-outline{
 
-.post-card{
+    background:#fff;
 
-    background:rgba(255,255,255,.08);
+    color:var(--primary);
 
-    backdrop-filter:blur(18px);
-
-    border:1px solid rgba(255,255,255,.12);
+    border:2px solid var(--primary);
 
 }
 
-.post-card h3{
+.btn-outline:hover{
 
-    color:#4cc9f0;
-
-}
-
-.post-card p{
-
-    color:#d6e6ff;
-
-}
-
-/* ==========================================
-   LEARNING CARD
-========================================== */
-
-.learning-card{
-
-    background:rgba(255,255,255,.08);
-
-    backdrop-filter:blur(18px);
-
-    border:1px solid rgba(255,255,255,.12);
-
-}
-
-.learning-card h3{
-
-    color:#4cc9f0;
-
-}
-
-.learning-card p{
-
-    color:#d6e6ff;
-
-}
-
-/* ==========================================
-   GOAL CARD
-========================================== */
-
-.goal-card{
-
-    background:
-    linear-gradient(135deg,
-    #2563eb,
-    #3b82f6,
-    #06b6d4);
-
-    color:#fff;
-
-    box-shadow:
-    0 20px 50px rgba(37,99,235,.45);
-
-}
-
-.goal-card h2{
+    background:var(--primary);
 
     color:#fff;
 
 }
 
-.goal-card p{
+/* ==========================
+   TYPOGRAPHY
+========================== */
 
-    color:#eef7ff;
+h1,h2,h3,h4,h5,h6{
 
-}
+    color:var(--secondary);
 
-/* ==========================================
-   HEADINGS
-========================================== */
-
-.hero h1,
-.section h2{
-
-    color:#ffffff;
+    font-weight:700;
 
 }
 
-.hero h3{
+p{
 
-    color:#4cc9f0;
+    color:var(--text-light);
 
 }
 
-.hero p{
+a{
 
-    color:#d6e6ff;
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eef5ff;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary-dark);
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+    section{
+
+        padding:20px 16px;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+    }
 
 }
