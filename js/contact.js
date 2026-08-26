@@ -9,95 +9,198 @@ contact.innerHTML = `
 
 <section class="contact-page">
 
-    <div class="container">
+    <div class="contact-header">
 
-        <div class="contact-header">
+        <img
+            src="assets/images/profile.jpg"
+            alt="JOHNNY TEC. Dev"
+            class="contact-profile">
 
-            <h1>Contact Me</h1>
+        <h1>JOHNNY TEC. Dev</h1>
 
-            <p>
-                Feel free to connect with me through any of the platforms below.
-            </p>
+        <h3>Aspiring Full Stack Developer</h3>
 
-        </div>
+        <p>
 
-        <div class="contact-grid">
+            Let's connect! Feel free to reach me through any platform below.
 
-            <!-- WhatsApp -->
+        </p>
 
-            <a
-                href="https://wa.me/23234653361"
-                target="_blank"
-                class="contact-card">
+    </div>
 
-                <div class="icon">💬</div>
+    <div class="contact-container">
 
-                <h3>WhatsApp</h3>
+        <!-- Email -->
 
-                <p>033106301</p>
+        <a
+            href="mailto:fatormajohn64@gmail.com"
+            class="contact-card">
 
-            </a>
+            <div class="contact-left">
 
-            <!-- TikTok -->
+                <div class="contact-icon email">
 
-            <a
-                href="https://www.tiktok.com/@nasheedvibez?_r=1&_t=ZS-94UPI2DDkHI"
-                target="_blank"
-                class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
 
-                <div class="icon">🎵</div>
+                </div>
 
-                <h3>TikTok</h3>
+                <div>
 
-                <p>@nasheedvibez</p>
+                    <h2>Email</h2>
 
-            </a>
+                    <p>fatormajohn64@gmail.com</p>
 
-            <!-- Facebook / Website -->
+                </div>
 
-            <a
-                href="https://salonepadiai-cloud.github.io/salonepadi-ai-frontend/"
-                target="_blank"
-                class="contact-card">
+            </div>
 
-                <div class="icon">🌐</div>
+            <i class="fa-solid fa-chevron-right"></i>
 
-                <h3>Website</h3>
+        </a>
 
-                <p>Visit My Portfolio</p>
+        <!-- WhatsApp -->
 
-            </a>
+        <a
+            href="https://wa.me/23234653361"
+            target="_blank"
+            class="contact-card">
 
-            <!-- Email -->
+            <div class="contact-left">
 
-            <a
-                href="mailto:fatormajohn64@gmail.com"
-                class="contact-card">
+                <div class="contact-icon whatsapp">
 
-                <div class="icon">📧</div>
+                    <i class="fa-brands fa-whatsapp"></i>
 
-                <h3>Email</h3>
+                </div>
 
-                <p>fatormajohn64@gmail.com</p>
+                <div>
 
-            </a>
+                    <h2>WhatsApp</h2>
 
-            <!-- WhatsApp QR -->
+                    <p>Chat with JOHNNY TEC. Dev</p>
 
-            <a
-                href="https://wa.me/qr/RYKEVHEYTNU4M1"
-                target="_blank"
-                class="contact-card">
+                </div>
 
-                <div class="icon">📱</div>
+            </div>
 
-                <h3>WhatsApp QR</h3>
+            <i class="fa-solid fa-chevron-right"></i>
 
-                <p>Open QR Chat</p>
+        </a>
 
-            </a>
+        <!-- TikTok -->
 
-        </div>
+        <a
+            href="https://www.tiktok.com/@nasheedvibez?_r=1&_t=ZS-94UPI2DDkHI"
+            target="_blank"
+            class="contact-card">
+
+            <div class="contact-left">
+
+                <div class="contact-icon tiktok">
+
+                    <i class="fa-brands fa-tiktok"></i>
+
+                </div>
+
+                <div>
+
+                    <h2>TikTok</h2>
+
+                    <p>@nasheedvibez</p>
+
+                </div>
+
+            </div>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+        <!-- JOHNNY TEC AI -->
+
+        <a
+            href="https://salonepadiai-cloud.github.io/salonepadi-ai-frontend/"
+            target="_blank"
+            class="contact-card">
+
+            <div class="contact-left">
+
+                <div class="contact-icon website">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                </div>
+
+                <div>
+
+                    <h2>JOHNNY TEC AI</h2>
+
+                    <p>Visit My Website</p>
+
+                </div>
+
+            </div>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+        <!-- Contact Number -->
+
+        <a
+            href="tel:+23233106301"
+            class="contact-card">
+
+            <div class="contact-left">
+
+                <div class="contact-icon phone">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </div>
+
+                <div>
+
+                    <h2>Contact Number</h2>
+
+                    <p>033106301</p>
+
+                </div>
+
+            </div>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+        <!-- WhatsApp Business -->
+
+        <a
+            href="https://wa.me/qr/RYKEVHEYTNU4M1"
+            target="_blank"
+            class="contact-card">
+
+            <div class="contact-left">
+
+                <div class="contact-icon business">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </div>
+
+                <div>
+
+                    <h2>WhatsApp Business</h2>
+
+                    <p>Business Chat</p>
+
+                </div>
+
+            </div>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
 
     </div>
 
