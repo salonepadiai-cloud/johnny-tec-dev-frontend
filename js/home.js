@@ -1,17 +1,20 @@
 // ==========================================
+// JOHNNY TEC. Dev
 // HOME PAGE
-// File: js/home.js
+// Premium Version
 // ==========================================
 
 const home = document.getElementById("home");
 
 home.innerHTML = `
 
-<section class="home-page">
+<div class="home-page">
 
-    <!-- Hero -->
+    <!-- ==========================
+         HERO
+    =========================== -->
 
-    <div class="hero">
+    <section class="hero">
 
         <img
             src="assets/images/profile.jpg"
@@ -23,19 +26,25 @@ home.innerHTML = `
         <h3>Aspiring Full Stack Developer</h3>
 
         <p>
-
-            Welcome to my portfolio.
-
-            I'm learning web development and building real projects
-            to improve my programming skills every day.
-
+            Welcome to my personal website.
+            I'm a passionate developer from Sierra Leone who is
+            learning web development every day by building
+            real-world projects and improving my coding skills.
         </p>
 
-    </div>
+        <br>
 
-    <!-- Stats -->
+        <a href="#projects" class="btn btn-primary">
+            🚀 View My Projects
+        </a>
 
-    <div class="stats">
+    </section>
+
+    <!-- ==========================
+         STATS
+    =========================== -->
+
+    <section class="stats">
 
         <div class="stat-card">
 
@@ -47,7 +56,7 @@ home.innerHTML = `
 
         <div class="stat-card">
 
-            <h2>5+</h2>
+            <h2>8+</h2>
 
             <p>Technologies</p>
 
@@ -57,93 +66,168 @@ home.innerHTML = `
 
             <h2>100%</h2>
 
-            <p>Motivation</p>
+            <p>Passion To Learn</p>
 
         </div>
 
-    </div>
+    </section>
 
-    <!-- Latest Update -->
+    <!-- ==========================
+         LATEST UPDATE
+    =========================== -->
 
-    <div class="section">
+    <section class="section">
 
-        <h2>Latest Update</h2>
+        <h2>🔥 Latest Update</h2>
 
         <div class="post-card">
 
-            <h3>🚀 Building My Portfolio</h3>
+            <h3>Building My Portfolio</h3>
 
             <p>
 
-                I'm currently building my personal portfolio website
-                using HTML, CSS and JavaScript. More exciting
-                projects are coming soon.
+                I'm currently designing and improving my portfolio
+                website using HTML, CSS and JavaScript.
+                Every new update helps me become a better
+                frontend developer.
 
             </p>
 
         </div>
 
-    </div>
+    </section>
 
-    <!-- Current Learning -->
+    <!-- ==========================
+         CURRENTLY LEARNING
+    =========================== -->
 
-    <div class="section">
+    <section class="section">
 
-        <h2>Currently Learning</h2>
+        <h2>📚 Currently Learning</h2>
 
         <div class="learning-grid">
 
             <div class="learning-card">
 
-                <h3>HTML5</h3>
+                <h3>🌐 HTML5</h3>
 
-                <p>Building website structure.</p>
-
-            </div>
-
-            <div class="learning-card">
-
-                <h3>CSS3</h3>
-
-                <p>Creating beautiful interfaces.</p>
+                <p>
+                    Building clean and semantic website structures.
+                </p>
 
             </div>
 
             <div class="learning-card">
 
-                <h3>JavaScript</h3>
+                <h3>🎨 CSS3</h3>
 
-                <p>Making websites interactive.</p>
+                <p>
+                    Creating modern responsive user interfaces.
+                </p>
 
             </div>
 
             <div class="learning-card">
 
-                <h3>Git & GitHub</h3>
+                <h3>⚡ JavaScript</h3>
 
-                <p>Managing and sharing projects.</p>
+                <p>
+                    Making websites interactive and dynamic.
+                </p>
+
+            </div>
+
+            <div class="learning-card">
+
+                <h3>💻 Git & GitHub</h3>
+
+                <p>
+                    Managing projects and publishing them online.
+                </p>
 
             </div>
 
         </div>
 
-    </div>
+    </section>
 
-    <!-- Goal -->
+    <!-- ==========================
+         FEATURED PROJECT
+    =========================== -->
 
-    <div class="goal-card">
+    <section class="section">
 
-        <h2>🎯 My Goal</h2>
+        <h2>⭐ Featured Project</h2>
+
+        <div class="post-card">
+
+            <h3>SalonePadi AI</h3>
+
+            <p>
+
+                A project I'm working on to provide useful AI tools
+                and digital solutions. It continues to grow as I
+                learn more technologies.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+         TECHNOLOGIES
+    =========================== -->
+
+    <section class="section">
+
+        <h2>💙 Tech Stack</h2>
+
+        <div class="learning-grid">
+
+            <div class="learning-card">
+                <h3>HTML</h3>
+                <p>Website Structure</p>
+            </div>
+
+            <div class="learning-card">
+                <h3>CSS</h3>
+                <p>Modern UI Design</p>
+            </div>
+
+            <div class="learning-card">
+                <h3>JavaScript</h3>
+                <p>Interactive Applications</p>
+            </div>
+
+            <div class="learning-card">
+                <h3>GitHub</h3>
+                <p>Project Hosting & Version Control</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+         GOAL
+    =========================== -->
+
+    <section class="goal-card">
+
+        <h2>🎯 My Mission</h2>
 
         <p>
 
-            My goal is to become a professional Full Stack Developer,
-            build useful applications and continue learning every day.
+            My mission is to become a professional Full Stack
+            Developer by continuously learning, building useful
+            applications and solving real-world problems through
+            technology.
 
         </p>
 
-    </div>
+    </section>
 
-</section>
+</div>
 
 `;
