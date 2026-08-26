@@ -9,198 +9,202 @@ contact.innerHTML = `
 
 <section class="contact-page">
 
-    <div class="contact-header">
+    <div class="container">
 
-        <img
-            src="assets/images/profile.jpg"
-            alt="JOHNNY TEC. Dev"
-            class="contact-profile">
+        <div class="contact-header">
 
-        <h1>JOHNNY TEC. Dev</h1>
+            <img
+                src="assets/images/profile.jpg"
+                alt="JOHNNY TEC. Dev"
+                class="contact-profile">
 
-        <h3>Aspiring Full Stack Developer</h3>
+            <h1>JOHNNY TEC. Dev</h1>
 
-        <p>
+            <h3>Full Stack Developer • Web Designer • AI Enthusiast</h3>
 
-            Let's connect! Feel free to reach me through any platform below.
+            <p>
+                Thank you for visiting my portfolio. If you'd like to collaborate,
+                build a project together, or simply say hello, you can reach me
+                through any of the platforms below.
+            </p>
 
-        </p>
+        </div>
 
-    </div>
+        <div class="contact-container">
 
-    <div class="contact-container">
+            <!-- Email -->
 
-        <!-- Email -->
+            <a
+                href="mailto:fatormajohn64@gmail.com"
+                class="contact-card">
 
-        <a
-            href="mailto:fatormajohn64@gmail.com"
-            class="contact-card">
+                <div class="contact-left">
 
-            <div class="contact-left">
+                    <div class="contact-icon email">
 
-                <div class="contact-icon email">
+                        <i class="fa-solid fa-envelope"></i>
 
-                    <i class="fa-solid fa-envelope"></i>
+                    </div>
 
-                </div>
+                    <div>
 
-                <div>
+                        <h2>Email</h2>
 
-                    <h2>Email</h2>
+                        <p>fatormajohn64@gmail.com</p>
 
-                    <p>fatormajohn64@gmail.com</p>
-
-                </div>
-
-            </div>
-
-            <i class="fa-solid fa-chevron-right"></i>
-
-        </a>
-
-        <!-- WhatsApp -->
-
-        <a
-            href="https://wa.me/23234653361"
-            target="_blank"
-            class="contact-card">
-
-            <div class="contact-left">
-
-                <div class="contact-icon whatsapp">
-
-                    <i class="fa-brands fa-whatsapp"></i>
+                    </div>
 
                 </div>
 
-                <div>
+                <i class="fa-solid fa-chevron-right"></i>
 
-                    <h2>WhatsApp</h2>
+            </a>
 
-                    <p>Chat with JOHNNY TEC. Dev</p>
+            <!-- WhatsApp -->
 
-                </div>
+            <a
+                href="https://wa.me/23234653361"
+                target="_blank"
+                class="contact-card">
 
-            </div>
+                <div class="contact-left">
 
-            <i class="fa-solid fa-chevron-right"></i>
+                    <div class="contact-icon whatsapp">
 
-        </a>
+                        <i class="fa-brands fa-whatsapp"></i>
 
-        <!-- TikTok -->
+                    </div>
 
-        <a
-            href="https://www.tiktok.com/@nasheedvibez?_r=1&_t=ZS-94UPI2DDkHI"
-            target="_blank"
-            class="contact-card">
+                    <div>
 
-            <div class="contact-left">
+                        <h2>WhatsApp</h2>
 
-                <div class="contact-icon tiktok">
+                        <p>Message JOHNNY TEC. Dev</p>
 
-                    <i class="fa-brands fa-tiktok"></i>
-
-                </div>
-
-                <div>
-
-                    <h2>TikTok</h2>
-
-                    <p>@nasheedvibez</p>
+                    </div>
 
                 </div>
 
-            </div>
+                <i class="fa-solid fa-chevron-right"></i>
 
-            <i class="fa-solid fa-chevron-right"></i>
+            </a>
 
-        </a>
+            <!-- WhatsApp Business -->
 
-        <!-- JOHNNY TEC AI -->
+            <a
+                href="https://wa.me/qr/RYKEVHEYTNU4M1"
+                target="_blank"
+                class="contact-card">
 
-        <a
-            href="https://salonepadiai-cloud.github.io/salonepadi-ai-frontend/"
-            target="_blank"
-            class="contact-card">
+                <div class="contact-left">
 
-            <div class="contact-left">
+                    <div class="contact-icon business">
 
-                <div class="contact-icon website">
+                        <i class="fa-brands fa-whatsapp"></i>
 
-                    <i class="fa-solid fa-globe"></i>
+                    </div>
 
-                </div>
+                    <div>
 
-                <div>
+                        <h2>WhatsApp Business</h2>
 
-                    <h2>JOHNNY TEC AI</h2>
+                        <p>Business Support</p>
 
-                    <p>Visit My Website</p>
-
-                </div>
-
-            </div>
-
-            <i class="fa-solid fa-chevron-right"></i>
-
-        </a>
-
-        <!-- Contact Number -->
-
-        <a
-            href="tel:+23233106301"
-            class="contact-card">
-
-            <div class="contact-left">
-
-                <div class="contact-icon phone">
-
-                    <i class="fa-solid fa-phone"></i>
+                    </div>
 
                 </div>
 
-                <div>
+                <i class="fa-solid fa-chevron-right"></i>
 
-                    <h2>Contact Number</h2>
+            </a>
 
-                    <p>033106301</p>
+            <!-- TikTok -->
 
-                </div>
+            <a
+                href="https://www.tiktok.com/@nasheedvibez?_r=1&_t=ZS-94UPI2DDkHI"
+                target="_blank"
+                class="contact-card">
 
-            </div>
+                <div class="contact-left">
 
-            <i class="fa-solid fa-chevron-right"></i>
+                    <div class="contact-icon tiktok">
 
-        </a>
+                        <i class="fa-brands fa-tiktok"></i>
 
-        <!-- WhatsApp Business -->
+                    </div>
 
-        <a
-            href="https://wa.me/qr/RYKEVHEYTNU4M1"
-            target="_blank"
-            class="contact-card">
+                    <div>
 
-            <div class="contact-left">
+                        <h2>TikTok</h2>
 
-                <div class="contact-icon business">
+                        <p>@nasheedvibez</p>
 
-                    <i class="fa-brands fa-whatsapp"></i>
-
-                </div>
-
-                <div>
-
-                    <h2>WhatsApp Business</h2>
-
-                    <p>Business Chat</p>
+                    </div>
 
                 </div>
 
-            </div>
+                <i class="fa-solid fa-chevron-right"></i>
 
-            <i class="fa-solid fa-chevron-right"></i>
+            </a>
 
-        </a>
+            <!-- JOHNNY TEC AI -->
+
+            <a
+                href="https://salonepadiai-cloud.github.io/salonepadi-ai-frontend/"
+                target="_blank"
+                class="contact-card">
+
+                <div class="contact-left">
+
+                    <div class="contact-icon website">
+
+                        <i class="fa-solid fa-globe"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h2>JOHNNY TEC AI</h2>
+
+                        <p>Visit My AI Platform</p>
+
+                    </div>
+
+                </div>
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </a>
+
+            <!-- Contact Number -->
+
+            <a
+                href="tel:+23233106301"
+                class="contact-card">
+
+                <div class="contact-left">
+
+                    <div class="contact-icon phone">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h2>Contact Number</h2>
+
+                        <p>033106301</p>
+
+                    </div>
+
+                </div>
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </a>
+
+        </div>
 
     </div>
 
