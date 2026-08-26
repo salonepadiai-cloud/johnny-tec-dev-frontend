@@ -1,7 +1,7 @@
-/* ===================================
+/* ==========================================
    JOHNNY TEC. Dev
-   Bottom Navigation
-=================================== */
+   PREMIUM GLASS NAVBAR
+========================================== */
 
 #navbar{
 
@@ -9,17 +9,21 @@
 
     left:50%;
 
-    bottom:20px;
+    bottom:18px;
 
     transform:translateX(-50%);
 
     width:95%;
 
-    max-width:480px;
+    max-width:520px;
 
-    z-index:999;
+    z-index:9999;
 
 }
+
+/* ==========================
+   NAV CONTAINER
+========================== */
 
 .bottom-nav{
 
@@ -29,19 +33,29 @@
 
     align-items:center;
 
-    padding:12px 15px;
+    gap:8px;
 
-    background:rgba(255,255,255,.95);
+    padding:12px;
 
-    backdrop-filter:blur(20px);
+    background:rgba(8,18,40,.88);
 
-    border:1px solid rgba(226,232,240,.8);
+    backdrop-filter:blur(25px);
 
-    border-radius:24px;
+    -webkit-backdrop-filter:blur(25px);
 
-    box-shadow:0 15px 40px rgba(15,23,42,.15);
+    border:1px solid rgba(59,130,246,.25);
+
+    border-radius:28px;
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,.45),
+    0 0 25px rgba(37,99,235,.20);
 
 }
+
+/* ==========================
+   NAV ITEM
+========================== */
 
 .nav-item{
 
@@ -51,37 +65,113 @@
 
     flex-direction:column;
 
-    align-items:center;
-
     justify-content:center;
 
-    gap:5px;
+    align-items:center;
 
-    padding:10px;
+    gap:6px;
+
+    padding:12px 8px;
 
     border-radius:18px;
 
     cursor:pointer;
 
-    transition:.3s;
+    transition:.35s ease;
 
-    color:#64748b;
+    color:#9fb7ff;
+
+    user-select:none;
 
 }
 
 .nav-item:hover{
 
-    background:#f1f5f9;
+    background:rgba(37,99,235,.15);
 
-    color:#2563eb;
+    color:#ffffff;
+
+    transform:translateY(-3px);
 
 }
 
+/* ==========================
+   ACTIVE ITEM
+========================== */
+
 .nav-item.active{
 
-    background:#2563eb;
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #3b82f6,
+        #60a5fa
+    );
 
     color:#ffffff;
+
+    box-shadow:
+    0 0 20px rgba(59,130,246,.55);
+
+}
+
+/* ==========================
+   ICON
+========================== */
+
+.nav-icon{
+
+    font-size:24px;
+
+    transition:.3s;
+
+}
+
+.nav-item.active .nav-icon{
+
+    transform:scale(1.15);
+
+}
+
+/* ==========================
+   LABEL
+========================== */
+
+.nav-label{
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:.4px;
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+#navbar{
+
+    width:calc(100% - 18px);
+
+    bottom:12px;
+
+}
+
+.bottom-nav{
+
+    border-radius:24px;
+
+    padding:10px;
+
+}
+
+.nav-item{
+
+    padding:10px 5px;
 
 }
 
@@ -89,40 +179,12 @@
 
     font-size:22px;
 
-    line-height:1;
-
 }
 
 .nav-label{
 
-    font-size:12px;
-
-    font-weight:600;
+    font-size:11px;
 
 }
-
-@media(max-width:500px){
-
-    #navbar{
-
-        width:calc(100% - 20px);
-
-        bottom:10px;
-
-    }
-
-    .bottom-nav{
-
-        border-radius:20px;
-
-        padding:10px;
-
-    }
-
-    .nav-label{
-
-        font-size:11px;
-
-    }
 
 }
